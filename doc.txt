@@ -1,0 +1,11 @@
+
+// https://sequelize.org/v5/manual/getting-started.html
+
+-- cria database, se não for sqlite
+yarn sequelize db:create
+
+-- criar migration
+yarn sequelize migration:create --name=create-usersv2
+
+-- add new column
+yarn sequelize migration:create --name=create-users-add-age-field
